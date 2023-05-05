@@ -17,12 +17,6 @@ if not lazy_ok then
 end
 
 local plugins = {
-    -- impatient - https://github.com/lewis6991/impatient.nvim
-    -- XXX remove if merged https://github.com/neovim/neovim/pull/15436
-    {
-        "lewis6991/impatient.nvim",
-    },
-
     -- onenord - https://github.com/rmehri01/onenord.nvim
     {
         "rmehri01/onenord.nvim",

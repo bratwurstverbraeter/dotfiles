@@ -106,7 +106,7 @@ lualine.setup {
                     modified = " " .. icons.ui.Pencil, -- Text to show when the file is modified.
                     readonly = " " .. icons.ui.Lock, -- Text to show when the file is non-modifiable or readonly.
                     unnamed = "[No Name]", -- Text to show for unnamed buffers.
-                    directory =  icons.documents.Folder, -- Text to show when the buffer is a directory
+                    directory =  icons.kind.Folder, -- Text to show when the buffer is a directory
                 }
             }
         },
