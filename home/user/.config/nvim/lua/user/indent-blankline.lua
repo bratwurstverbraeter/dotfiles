@@ -4,21 +4,19 @@ if not indent_blankline_ok then
 end
 
 indent_blankline.setup {
-    enabled = false,
+    enabled = true,
     show_current_context = false,
     show_trailing_blankline_indent = false,
     show_first_indent_level = true,
-    char = '┊',
-    -- XXX
-    -- use_treesitter = true,
-    -- use_treesitter_scope = true,
+    char = "┊",
+    use_treesitter = true,
+    use_treesitter_scope = true,
     buftype_exclude = {
         "terminal",
         "nofile",
     },
     filetype_exclude = {
         "help",
-        -- "packer",
         "neogitstatus",
         "Trouble",
         "text"
