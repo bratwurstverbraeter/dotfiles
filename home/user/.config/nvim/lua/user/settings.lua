@@ -2,6 +2,7 @@ local indent = 4
 local textwidth = 100
 
 vim.opt.backup = false -- no backup before saving
+vim.opt.breakindent = true
 vim.opt.clipboard = "unnamedplus" -- copy paste between vim and everything else
 vim.opt.cmdheight = 1
 vim.opt.colorcolumn = tostring(textwidth + 1) -- colorized column
@@ -18,7 +19,13 @@ vim.opt.iskeyword:append("-")
 vim.opt.inccommand = "split" -- show command results incrementally and also in a preview window
 vim.opt.joinspaces = false -- always insert just one space on joining two lines
 vim.opt.lazyredraw = true -- don't redraw when executing macros
-vim.opt.listchars = { trail = "⋅", precedes = "«", extends = "»", tab = " ▸", eol = "↴", lead = "⋅", space = "⋅" }
+vim.opt.listchars:append("trail:⋅")
+vim.opt.listchars:append("precedes:«")
+vim.opt.listchars:append("extends:»")
+vim.opt.listchars:append("tab: ▸")
+vim.opt.listchars:append("eol:↴")
+vim.opt.listchars:append("lead:⋅")
+vim.opt.listchars:append("space:⋅")
 vim.opt.number = true -- line numbers
 vim.opt.pumheight = 10 -- Makes popup menu smaller
 vim.opt.relativenumber = true -- relative line numbers

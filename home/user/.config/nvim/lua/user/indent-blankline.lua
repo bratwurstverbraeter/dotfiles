@@ -4,12 +4,14 @@ if not indent_blankline_ok then
 end
 
 indent_blankline.setup {
-    indentLine_enabled = 1,
+    enabled = false,
     show_current_context = false,
     show_trailing_blankline_indent = false,
     show_first_indent_level = true,
-    use_treesitter = true,
-    use_treesitter_scope = 1,
+    char = '┊',
+    -- XXX
+    -- use_treesitter = true,
+    -- use_treesitter_scope = true,
     buftype_exclude = {
         "terminal",
         "nofile",
